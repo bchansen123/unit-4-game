@@ -1,53 +1,57 @@
 const Pokemon = function (choice){
     this.name = choice.name;
     this.health = choice.health;
+    this.abilities = choice.abilities;
     this.image = choice.image;
 };
 
 const Abilities = function (choice) {
-    this.name = choice.name;
+    this.attackOne = choice.attackOne;
+    this.attackTwo = choice.attackTwo;
+    this.attackThree = choice.attackThree;
+    this.attackFour = choice.attackFour;
 };
 
 // Different abilities specified
 
-const thunderbolt = ['Thunderbolt', 'attack', 50];
-const scratchAttack = ['Scratch Attack', 'attack', 25];
-const tackle = ['Tackle', 'attack', 30];
-const waterGun = ['Water Gun', 'attack', 70];
-const slam = ['Slam', 'attack', 40];
-const slash = ['Slash', 'attack', 50];
-const flare = ['Flare', 'attack', 60];
-const tailWhip = ['Tail Whip', 'attack', 30];
-const sleep = ['Sleep', 'attack', 5];
-const hug = ['Hug', 'attack', 10];
-const yawn = ['Yawn', 'attack', 2];
-const anger = ['Anger', 'attack', 15];
-const cry = ['Cry', 'attack', 100];
-const splash = ['Splash', 'attack', 25];
-const flounder = ['Flounder', 'attack', 75];
-const hypnosis = ['Hypnosis', 'attack', 40];
-const slap = ['Slap', 'attack', 30];
-const cower = ['Cower', 'attack', 10];
-const toxicCloud = ['Toxic Cloud', 'attack', 60];
-const smoke = ['Smoke', 'attack', 5];
-const smash = ['Smash', 'attack', 50];
-const psychic = ['Psychic', 'attack', 10];
-const boulder = ['Boulder', 'attack', 60];
+const thunderbolt = ['Thunderbolt', 100];
+const scratchAttack = ['Scratch Attack', 5];
+const tackle = ['Tackle', 10];
+const waterGun = ['Water Gun', 70];
+const slam = ['Slam', 40];
+const slash = ['Slash', 50];
+const flare = ['Flare', 60];
+const tailWhip = ['Tail Whip', 30];
+const sleep = ['Sleep', 5];
+const hug = ['Hug', 10];
+const yawn = ['Yawn', 2];
+const anger = ['Anger', 15];
+const cry = ['Cry', 100];
+const splash = ['Splash', 25];
+const flounder = ['Flounder', 75];
+const hypnosis = ['Hypnosis', 40];
+const slap = ['Slap', 30];
+const cower = ['Cower', 10];
+const toxicCloud = ['Toxic Cloud', 60];
+const smoke = ['Smoke', 5];
+const smash = ['Smash', 50];
+const psychic = ['Psychic', 10];
+const boulder = ['Boulder', 60];
 
 // Images of pokemon
 
-const pikachuImage = '';
-const blastoiseImage = '';
-const charizardImage = '';
-const snorlaxImage = '';
-const jigglypuffImage = '';
-const magicarpImage = '';
-const mrmimeImage = '';
-const koffingImage = '';
-const mewtwoImage = '';
-const onixImage = '';
-const cuboneImage = '';
-const flareonImage = '';
+const pikachuImage = '<img src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png">';
+const blastoiseImage = '<img src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png">';
+const charizardImage = '<img src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png">';
+const snorlaxImage = '<img src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png">';
+const jigglypuffImage = '<img src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png">';
+const magicarpImage = '<img src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/129.png">';
+const mrmimeImage = '<img src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/122.png">';
+const koffingImage = '<img src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/109.png">';
+const mewtwoImage = '<img src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png">';
+const onixImage = '<img src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/095.png">';
+const cuboneImage = '<img src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/104.png">';
+const flareonImage = '<img src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/136.png">';
 
 //Specifying abilities of each pokemon
 //Pikachu abilities
@@ -150,6 +154,7 @@ const flareonAbilities = new Abilities({
 // Specifying attributes to each pokemon
 //Pikachu attributes
 const pikachu = new Pokemon({
+    value: 1,
     name: 'Pikachu',
     health: 300,
     abilities: pikachuAbilities,
@@ -158,6 +163,7 @@ const pikachu = new Pokemon({
 
 //Blastoise attributes
 const blastoise = new Pokemon({
+    value: 2,
     name: 'blastoise',
     health: 250,
     abilities: blastoiseAbilities,
@@ -166,6 +172,7 @@ const blastoise = new Pokemon({
 
 //Charizard attributes
 const charizard = new Pokemon({
+    value: 3,
     name: 'Charizard',
     health: 300,
     abilities: charizardAbilities,
@@ -174,6 +181,7 @@ const charizard = new Pokemon({
 
 //Snorlax attributes
 const snorlax = new Pokemon({
+    value: 4,
     name: 'Snorlax',
     health: 225,
     abilities: snorlaxAbilities,
@@ -182,6 +190,7 @@ const snorlax = new Pokemon({
 
 //Jigglypuff attributes
 const jigglypuff = new Pokemon({
+    value: 5,
     name: 'Jigglypuff',
     health: 150,
     abilities: jigglypuffAbilities,
@@ -190,6 +199,7 @@ const jigglypuff = new Pokemon({
 
 //Magicarp attributes
 const magicarp = new Pokemon({
+    value: 6,
     name: 'Magicarp',
     health: 100,
     abilities: magicarpAbilities,
@@ -198,6 +208,7 @@ const magicarp = new Pokemon({
 
 //Mr. Mime attributes
 const mrmime = new Pokemon({
+    value: 7,
     name: 'Mr. Mime',
     health: 250,
     abilities: mrmimeAbilities,
@@ -206,6 +217,7 @@ const mrmime = new Pokemon({
 
 //Koffing attributes
 const koffing = new Pokemon({
+    value: 8,
     name: 'Koffing',
     health: 175,
     abilities: koffingAbilities,
@@ -214,6 +226,7 @@ const koffing = new Pokemon({
 
 //MewTwo attributes
 const mewtwo = new Pokemon({
+    value: 9,
     name: 'Mewtwo',
     health: 500,
     abilities: mewtwoAbilities,
@@ -222,6 +235,7 @@ const mewtwo = new Pokemon({
 
 //Onix attributes
 const onix = new Pokemon({
+    value: 10,
     name: 'Onix',
     health: 200,
     abilities: onixAbilities,
@@ -230,6 +244,7 @@ const onix = new Pokemon({
 
 //Cubone attributes
 const cubone = new Pokemon({
+    value: 11,
     name: '50',
     health: 77,
     abilities: cuboneAbilities,
@@ -238,6 +253,7 @@ const cubone = new Pokemon({
 
 //Flareon attributes
 const flareon = new Pokemon({
+    value: 12,
     name: 'Flareon',
     health: 150,
     abilities: pikachuAbilities,
@@ -247,3 +263,174 @@ const flareon = new Pokemon({
 
 //Array holding all pokemon specified above
 const totalPokemon = [pikachu, charizard, blastoise, snorlax, jigglypuff, magicarp, mrmime, koffing, mewtwo, onix, cubone, flareon];
+
+// randomize the pokemon the computer uses
+randomizer = totalPokemon[Math.floor(Math.random() * totalPokemon.length)];
+
+//Get the pokemon the user chose
+
+function userPlayer () {
+    playerOne = totalPokemon[0];
+};
+    // if ($("button").click(function(){
+    //      var temporary = $(this).attr("id")
+    // }) == "1") {
+    //     playerOne = totalPokemon[0];
+    // };
+    // };
+
+// Get a random pokemon for computer to use
+function computerPokemon() {
+    compPlayer = randomizer;
+};
+
+
+//Load in pokemon choice and populate attacks
+function loadCompPokemon () {
+    $(".computerPokemon").html(compPlayer.image);
+    $(".pokemonSelector").addClass("showing");
+    $(".attackOne").removeClass("notShowing");
+    $(".attackTwo").removeClass("notShowing");
+    $(".attackThree").removeClass("notShowing");
+    $(".attackFour").removeClass("notShowing");
+    $(".attackOne").html(compPlayer.abilities.attackOne[0]);
+    $(".attackTwo").html(compPlayer.abilities.attackTwo[0]);
+    $(".attackThree").html(compPlayer.abilities.attackThree[0]);
+    $(".attackFour").html(compPlayer.abilities.attackFour[0]);
+    
+};
+function loadPlayerPokemon () {
+    $(".userPokemon").html(playerOne.image);
+    $(".playerAttackOne").removeClass("notShowing");
+    $(".playerAttackTwo").removeClass("notShowing");
+    $(".playerAttackThree").removeClass("notShowing");
+    $(".playerAttackFour").removeClass("notShowing");
+    $(".playerAttackOne").html(playerOne.abilities.attackOne[0]);
+    $(".playerAttackTwo").html(playerOne.abilities.attackTwo[0]);
+    $(".playerAttackThree").html(playerOne.abilities.attackThree[0]);
+    $(".playerAttackFour").html(playerOne.abilities.attackFour[0]);
+};
+
+function loadHealth () {
+    $(".healthComp").html(compPlayer.name + " has " + compPlayer.health);
+    $(".healthPlayer").html(playerOne.name + " has " + playerOne.health);
+}
+
+$(".pokemonSelector").on("click",function () {
+//Run computer generated pokemon loaded in
+computerPokemon();
+//Load player selected pokemon
+userPlayer();
+//Show health of competitor and player
+loadHealth();
+loadPlayerPokemon();
+loadCompPokemon();
+});
+
+//Subracting health based on attack one
+function minusHealthOne () {
+    compPlayer.health = compPlayer.health - playerOne.abilities.attackOne[1];
+    loadHealth();
+}
+
+//Subracting health based on attack two
+function minusHealthTwo () {
+    compPlayer.health = compPlayer.health - playerOne.abilities.attackTwo[1];
+    loadHealth();
+}
+
+//Subracting health based on attack three
+function minusHealthThree () {
+    compPlayer.health = compPlayer.health - playerOne.abilities.attackThree[1];
+    loadHealth();
+}
+
+//Subracting health based on attack four
+function minusHealthFour () {
+    compPlayer.health = compPlayer.health - playerOne.abilities.attackFour[1];
+    loadHealth();
+}
+
+
+//Calling each previous attack function to minus health once clicked on appropriate button
+$(".playerAttackOne").on("click", function(){
+    minusHealthOne();
+});
+    
+$(".playerAttackTwo").on("click", function(){
+    minusHealthTwo();
+});
+
+$(".playerAttackThree").on("click", function(){
+    minusHealthThree();
+});
+
+$(".playerAttackFour").on("click", function(){
+    minusHealthFour();
+});
+
+
+
+//Click of button one will display damage taken
+$(".playerAttackOne").on("click", function(){
+    $(".damageDisplay").html(playerOne.name + " attacks " + compPlayer.name + " with "+ playerOne.abilities.attackOne[0] + " for " + playerOne.abilities.attackOne[1] + " damage.");
+});
+
+//Click of button two will display damage taken
+$(".playerAttackTwo").on("click", function(){
+    $(".damageDisplay").html(playerOne.name + " attacks " + compPlayer.name + " with "+ playerOne.abilities.attackTwo[0] + " for " + playerOne.abilities.attackTwo[1] + " damage.");
+});
+
+//Click of button three will display damage taken
+$(".playerAttackThree").on("click", function(){
+    $(".damageDisplay").html(playerOne.name + " attacks " + compPlayer.name + " with "+ playerOne.abilities.attackThree[0] + " for " + playerOne.abilities.attackThree[1] + " damage.");
+});
+
+//Click of button four will display damage taken
+$(".playerAttackFour").on("click", function(){
+    $(".damageDisplay").html(playerOne.name + " attacks " + compPlayer.name + " with "+ playerOne.abilities.attackFour[0] + " for " + playerOne.abilities.attackFour[1] + " damage.");
+});
+
+
+//Computer attacks after player finished a move
+
+$(".turnChooser").on("click", function(){
+    var computerAttack = "";
+    var computerAttackName ="";
+    var abilityChoice = Math.floor(Math.random() * 10);
+    if (abilityChoice >= 8){
+        computerAttack = compPlayer.abilities.attackOne[1];
+        computerAttackName = compPlayer.abilities.attackOne[0];
+        playerOne.health = playerOne.health - computerAttack;
+    }
+    else if (abilityChoice > 5 && abilityChoice<=7) {
+        computerAttack = compPlayer.abilities.attackTwo[1];
+        computerAttackName = compPlayer.abilities.attackTwo[0];
+        playerOne.health = playerOne.health - computerAttack;
+    }
+    else if (abilityChoice > 2 && abilityChoice <= 4) {
+        computerAttack = compPlayer.abilities.attackThree[1];
+        computerAttackName = compPlayer.abilities.attackThree[0];
+        playerOne.health = playerOne.health - computerAttack;
+    }
+    else if (abilityChoice >= 0 && abilityChoice <= 1) {
+        computerAttack = compPlayer.abilities.attackThree[1];
+        computerAttackName = compPlayer.abilities.attackThree[0];
+        playerOne.health = playerOne.health - computerAttack;
+    }
+    //logging out computer response to attack
+    $(".logTwo").html(compPlayer.name + " doesn't like that. They fire back with " + computerAttackName + " which inflicts " + computerAttack + " damage.");
+});
+
+//Ending the game once one player has reached 0
+$(".trigger").on("click", function(){
+    if(playerOne.health <=0) {
+        $(".log").html("You LOSE!");
+    }
+    else if (compPlayer.health <= 0) {
+        $(".log").html("YOU WIN!");
+    }
+    else {
+        return;
+    }
+});

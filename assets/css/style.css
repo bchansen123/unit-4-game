@@ -1,0 +1,33 @@
+.notShowing {
+    display: none;
+}
+
+.showing {
+    display: none;
+}
+
+.imgResize {
+    width: 200px;
+background: white;
+}
+
+button {
+    background: white;
+}
+
+body {
+    background: url("../images/background.png"), 100%;
+
+}
+
+.banner {
+    width: 500px;
+}
+
+.attackImg {
+    width: 200px;
+}
+
+.col-12 {
+    background-color: white;
+}
